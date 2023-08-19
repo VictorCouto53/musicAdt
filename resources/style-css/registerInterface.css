@@ -1,0 +1,162 @@
+:root {
+  --color-I: #B03E00;
+  --color-II: #c4c4c4;
+  --color-III: #FFFFFF;
+
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #fff;
+}
+
+#background {
+	background-image: url(../images/scandinav.jpg);
+	background-position: center;
+	background-size: cover;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+p{
+	color: var(--color-II);
+	font-family: "Arial", sans-serif;
+	font-weight: normal;
+	line-height: 1em;
+}
+
+#loginContainer * {
+	font-family: : "Arial", sans-serif;
+	line-height: 1em;
+	box-sizing: border-box;
+}
+
+#loginContainer {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	top: 80px;
+	max-width: 1024px;
+}
+
+#inputContainer {
+	width: 400px;
+	padding: 50px;
+	float: left;
+	border-right: 1px solid #999;
+}
+
+#inputContainer h2 {
+	text-align: center;
+	color: var(--color-I);
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+	display: block;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	height: 27px;
+	line-height: 27px;
+	width: 100%;
+}
+
+#inputContainer label {
+	color: var(--color-II);
+	font-size: 13px;
+	margin-top: 15px;
+}
+
+#inputContainer button {
+	background-color: transparent;
+	border: 2px solid var(--color-I);
+	border-radius: 250px;
+	color: var(--color-III);
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 20px auto;
+	height: 41px;
+	width: 100%;
+}
+
+#inputContainer button:hover{
+	cursor: pointer;
+}
+
+.hasAccount {
+	text-align: center;
+}
+
+.hasAccount span {
+	color: var(--color-I);
+	font-weight: bold;
+   font-size: 14px;
+   cursor: pointer;
+}
+
+#registerForm,
+#loginForm {
+	display: none;
+}
+
+#loginText {
+	padding: 50px;
+	display: table-cell;
+}
+
+#loginText h1 {
+	color: var(--color-I);
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#loginText h2 {
+	font-size: 35px;
+	color: var(--color-II);
+}
+
+#loginText ul {
+	padding: 0;
+}
+
+#loginText li {
+	color: var(--color-II);
+	font-size: 20px;
+	list-style-type: none;
+	padding: 5px 30px;
+	background: url(../images/icons/checkmarkII.png) no-repeat 0 0;
+}
+
+#inputContainer .errorMessage {
+	color: var(--color-I);
+	font-size: 16px;
+	display: block;
+}
